@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Creator Machine</title>
+</head>
+<body>
+	{% if was_created %}
+		<p> Do you actually want to DELETE your beautiful Book? :C</p>
+		<form action = "" method = "post">
+			<input type = "submit" name = "answer" value = "Yes">
+			<input type = "submit" name = "answer" value = "No">
+		</form>
+	{% else %}
+		<p> Your Book wasn't created yet! </p>
+	{% endif %}
+	<p></p>
+	<form action = "" method = "post">
+		<input type = "submit" name = "next" value = "Exit">
+	</form>
+</body>
+</html>

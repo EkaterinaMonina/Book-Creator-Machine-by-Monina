@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Creator Machine</title>
+</head>
+<body>
+	{% if was_created %}
+		<p>Just type what do you want to be the content of your Great Book and push "Enter" button, then click on "Exit" button.</p>
+		<form action = "" method = "post">
+			<p> <input type = "text" name = "content"> </p>
+		</form>
+	{% else %}
+		<p> Your Book wasn't created yet! </p>
+	{% endif %}
+	<form action = "" method = "post">
+		<input type = "submit" name = "next" value = "Exit">
+	</form>
+</body>
+</html>

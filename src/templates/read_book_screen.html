@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Creator Machine</title>
+</head>
+<body>
+	{% if was_created %}
+		<p> Here is your Book's content:</p>
+		<p> {{content}}
+	{% else %}
+		<p> Your Book wasn't created yet! </p>
+	{% endif %}
+	<form action = "" method = "post">
+		<input type = "submit" name = "next" value = "Exit">
+	</form>
+</body>
+</html>
